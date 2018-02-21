@@ -1132,6 +1132,7 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 # define _LIBCPP_HAS_NO_COROUTINES
 #endif
 
+#endif // __cplusplus
 
 // Decide whether to use availability macros.
 #if !defined(_LIBCPP_BUILDING_LIBRARY) &&                                      \
@@ -1142,8 +1143,6 @@ _LIBCPP_FUNC_VIS extern "C" void __sanitizer_annotate_contiguous_container(
 #define _LIBCPP_USE_AVAILABILITY_APPLE
 #endif
 #endif
-
-#endif // __cplusplus
 
 // Define availability macros.
 #if defined(_LIBCPP_USE_AVAILABILITY_APPLE)
